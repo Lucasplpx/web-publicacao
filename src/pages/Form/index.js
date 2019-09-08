@@ -155,7 +155,7 @@ export default function Image() {
         </div>
 
         {msg ? (
-          <div className="list">
+          <div className="list spacex">
             <Link to="/list">Listar</Link>
           </div>
         ) : (

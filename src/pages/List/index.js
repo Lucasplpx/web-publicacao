@@ -16,11 +16,9 @@ export default function List() {
       const res = await api.get(`/publicacoes?page=${page}`);
       setPosts(res.data.docs);
       setPgtot(res.data.pages)
-
-      console.log(res.data);
     }
     getList();
-  }, [page, status]);
+  }, [page, status, pgTot]);
 
   async function remover(id) {
     let r = window.confirm(`Confirma a exclusão do id ${id}?`);
@@ -40,7 +38,8 @@ export default function List() {
   }
 
   function handlePage(pg){
-    if (pg !== page) {
+    if (pg === pgTot) {
+      setPage(pgTot)
       return
     }
     const pagina = page + pg; 
@@ -83,7 +82,7 @@ export default function List() {
 
       <div className="paginate">
         <button className={page === 1 ? "pageDisabled" :""} onClick={() => handlePageBack(1)}>Anterior</button>
-        <button className={page === pgTot ? "pageDisabled" :""} onClick={() => handlePage(1)}>Proximo</button>
+        <button className={page === pgTot ? "pageDisabled" :""} disabled={page === pgTot ? "disabled" :""} onClick={() => handlePage(1)}>Proximo</button>
       </div>
     </div>
   );

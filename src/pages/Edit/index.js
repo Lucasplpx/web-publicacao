@@ -171,7 +171,7 @@ export default function Edit(props) {
         </div>
 
         {msg ? (
-          <div className="list">
+          <div className="list spacex">
             <Link to="/list">Listar</Link>
           </div>
         ) : (
