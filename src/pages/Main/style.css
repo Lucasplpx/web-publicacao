@@ -1,0 +1,34 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 500px;
+  background-image: url("https://img1.goodfon.com/wallpaper/nbig/9/e5/reka-bereg-prichal-sneg-zima.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 854px;
+}
+
+.intro p {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.intro p a{
+  text-decoration: none;
+  color: red;
+}
+
+.intro p a:hover{
+  color: #fff;
+  font-size: 20px;
+}

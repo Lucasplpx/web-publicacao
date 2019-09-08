@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+div .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ /* height: 834px;*/
+ height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+div .container section {
+  margin-top: 20px;
+  background: #f5f6ff;
+ /*border: 2px solid rgba(141, 149, 235, 1);*/
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 14px 9px 5px 3px rgba(141, 149, 235, 1);
+  -moz-box-shadow: 14px 9px 5px 3px rgba(141, 149, 235, 1);
+  box-shadow: 14px 9px 5px 3px rgba(141, 149, 235, 1);
+}
+
+div .container header {
+  text-align: center;
+  color: #013392;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div .container section label {
+  color: #013392;
+  font-weight: bolder;
+  font-size: 18px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+div .descricao {
+  display: flex;
+}
+
+div  p {
+  color: black;
+  text-decoration: underline;
+}
+
+div .local {
+  display: flex;
+}
+
+div .hashtags {
+  display: flex;
+}
+
+div .hashtags {
+  display: flex;
+}
+
+div .images {
+  display: flex;
+ 
+}
+
+div .images img  {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 13px;
+}
+
+.btn-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-actions a {
+  text-decoration: none;
+  margin: 10px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 16px;
+  background: #213e92de;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-actions a:hover {
+  opacity: 0.6;
+ 
+}
+
+.paginate {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19.5%;
+}
+
+.paginate button {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background: #013392;
+  height: 48px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.pageDisabled {
+  opacity: 0.2;
+  cursor: unset !important;
+}

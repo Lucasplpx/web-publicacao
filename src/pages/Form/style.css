@@ -1,0 +1,102 @@
+/* 
+  Style input[FILE]
+  https://www.youtube.com/watch?v=V48LbYH2UfU
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+form .center {
+  display: flex;
+  justify-content: center;
+}
+
+form .center input {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+}
+
+form .center input .file {
+  background: #213e92de;
+}
+
+form .center input::placeholder {
+  color: #999;
+}
+
+form .center progress {
+  width: 100%;
+  height: 30px;
+  margin-top: 4%;
+}
+
+form .center input[type="file"] {
+  display: none;
+}
+
+form .center label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  height: 60px;
+  width: 100%;
+  background: #213e92de;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .btnSend button {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 16px;
+  background: #213e92de;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 19.5%;
+}
+
+form .estMsg {
+  font-weight: bold;
+  color: #213e92de;
+  font-size: 25px;
+}
+
+form .list {
+  margin-top: 10px;
+  height: 48px;
+  width: 100%;
+  background: #213e92de;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
